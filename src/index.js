@@ -7,6 +7,8 @@ import ErrorPage from "./Components/ErrorPage";
 import RegisterPage from "./Components/RegisterPage";
 import PostsPage from "./Components/PostsPage";
 import HomePage from "./Components/HomePage";
+import NewPost from "./Components/NewPost";
+import ProfilePage from "./Components/ProfilePage";
 // import { element } from "prop-types";
 
 const router = createBrowserRouter([
@@ -27,6 +29,16 @@ const router = createBrowserRouter([
                 path: "/RegisterPage",
                 element: <RegisterPage/>
             },
+            {
+                path: "/NewPost",
+                element: <NewPost/>
+
+            },
+            {
+                path: "/ProfilePage",
+                element: <ProfilePage/>
+
+            }
           
         ]
     }

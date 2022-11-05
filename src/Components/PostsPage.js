@@ -8,8 +8,10 @@ const PostsPage = () => {
         <div>
             {
                 posts && posts.length ? posts.map((post,idx) => {
-                    return<div key={idx}>
+                    return<div class="posts" key={idx}>
                         <p>{post.title}</p>
+                        <p>Price: {post.price}</p>
+                        <p> Description: {post.description}</p>
                     </div>
                 }) : <p>No listings</p>
             }
