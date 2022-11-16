@@ -34,7 +34,7 @@ const NewPost = () => {
                 })
             });
             const data = await response.json()
-            // console.log("new post data: " ,data)
+            console.log("new post data: " ,data)
             setPosts([...posts, data.data.post])
             navigate("/PostsPage")
         } catch (error) {
