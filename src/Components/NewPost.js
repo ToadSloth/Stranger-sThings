@@ -19,7 +19,7 @@ const NewPost = () => {
                 alert("you need to be logged in")
                 return;
             }
-            const response = await fetch("https://strangers-things.herokuapp.com/api/COHORT-NAME/posts", {
+            const response = await fetch("https://strangers-things.herokuapp.com/api/2209-ftb-mt-web-ft/posts", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const NewPost = () => {
             const data = await response.json()
             // console.log("new post data: " ,data)
             setPosts([...posts, data.data.post])
-            navigate("/posts")
+            navigate("/PostsPage")
         } catch (error) {
             console.log(error)
         }
